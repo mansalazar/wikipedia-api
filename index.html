@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accessing Wikipedia API</title>
+    <link rel="stylesheet" href="site.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Search Wikipedia Here!</h1>
+      <form id="searchForm">
+          <label>
+            Search Wikipedia:
+            <input type="search" placeholder="Search Wikipedia for subjective answers!" value="Albert Einstein" />
+          </label>
+          <input type="submit" value="Search" />
+        </form>
+    </header>
+    <main>
+      <section>
+        <h2>Your search results:</h2>
+        <div id="results"></div>
+      </section>
+    </main>
+    <footer>
+      &copy; 2018 - By me
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
