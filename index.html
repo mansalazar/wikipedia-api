@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessing Wikipedia API</title>
     <link rel="stylesheet" href="site.css" type="text/css" />
   </head>
@@ -9,10 +10,8 @@
     <header>
       <h1>Search Wikipedia Here!</h1>
       <form id="searchForm">
-          <label>
-            Search Wikipedia:
-            <input type="search" placeholder="Search Wikipedia for subjective answers!" value="Albert Einstein" />
-          </label>
+          <label for="searchField">Search Wikipedia:</label>
+          <input id="searchField" type="search" placeholder="Search Wikipedia for subjective answers!" value="Albert Einstein" />
           <input type="submit" value="Search" />
         </form>
     </header>
@@ -23,7 +22,8 @@
       </section>
     </main>
     <footer>
-      &copy; 2018 - By me
+      <p>&copy; 2018 - Man Salazar</p>
+      <a id="scrollToTop">Return to Top ^</a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>

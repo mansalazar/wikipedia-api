@@ -103,6 +103,11 @@ $(function() {
     handleWikiSearch()
   })
 
+  $('#scrollToTop').click(function(e) {
+    e.preventDefault()
+    window.scroll(0, 0)
+  })
+
   $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() === $(document).height()) {
         searchResults.offSet += searchResults.offSetIncrement
